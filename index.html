@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="colorApp">
+<head>
+    <title>Angular</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script src="angular.min.js"></script>
+
+    <script src="script.js"></script>
+
+</head>
+<body ng-controller="ColorList">
+    <button ng-click="filtered = filterByRel">filter by rel gt 5</button>
+    <button ng-click="filtered = $scope.colors">reset filter</button>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <td ng-click="order = 'name'"><a href="">sort by name</a></td>
+                <td ng-click="order = 'rel'"><a href="">sort by rel</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="color in colors | orderBy: order | filter: filtered">
+                <td><span ng-style="{color: color.hexValue}">{{color.colorName}}</span></td>
+                <td><span>{{color.rel}}</span></td>
+                <td><button ng-click="colorRemove(color)">remove</button></td>
+                <td><button ng-click="colorRename(color)">rename</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

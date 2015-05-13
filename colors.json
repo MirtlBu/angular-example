@@ -1,0 +1,38 @@
+{
+    "colorsArray":[{
+            "colorName":"red",
+            "hexValue":"#f00",
+            "rel": 10
+        },
+        {
+            "colorName":"green",
+            "hexValue":"#0f0",
+            "rel": 5
+        },
+        {
+            "colorName":"blue",
+            "hexValue":"#00f",
+            "rel": 3
+        },
+        {
+            "colorName":"cyan",
+            "hexValue":"#0ff",
+            "rel": 1
+        },
+        {
+            "colorName":"magenta",
+            "hexValue":"#f0f",
+            "rel": 6
+        },
+        {
+            "colorName":"yellow",
+            "hexValue":"#ff0",
+            "rel": 11
+        },
+        {
+            "colorName":"black",
+            "hexValue":"#000",
+            "rel": 19
+        }
+    ]
+}
